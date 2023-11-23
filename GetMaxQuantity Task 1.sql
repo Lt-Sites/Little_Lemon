@@ -1,5 +1,6 @@
 CREATE PROCEDURE GetMaxQuantity()
-
-SELECT MAX(orders.Quantity)
-FROM orders;
+BEGIN
+    SELECT MAX(Quantity) AS MaxQuantity
+    FROM orders;
+END
 
