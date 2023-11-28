@@ -10,6 +10,6 @@ BEGIN
         -- Actualizar la fecha de la reserva
         UPDATE booking SET date = p_BookingDate WHERE booking_id = p_BookingID;
 
-        SELECT 'Fecha de reserva actualizada correctamente.' AS result;
+        SELECT '' AS result;
     END IF;
 END
